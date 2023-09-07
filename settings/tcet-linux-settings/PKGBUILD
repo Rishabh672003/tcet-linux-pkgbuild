@@ -7,7 +7,7 @@ pkgver=23.08
 pkgrel=11
 pkgdesc="Settings for TCET Linux"
 arch=('x86_64')
-url="https://github.com/tcet-opensource/tcet-linux-settings"
+url="https://github.com/harshau007/testing-repo/releases/download"
 license=('GPL3')
 makedepends=('git')
 
@@ -21,8 +21,8 @@ optdepends=('paru: an AUR helper'
 conflicts=()
 provides=("${pkgname}")
 options=(!strip !emptydirs)
-source=(${pkgname}::"git+${url}")
-sha256sums=('SKIP')
+source=("$pkgname.tar.gz::$url/2023.09.07/$pkgname.tar.gz")
+sha256sums=('da00355f1e2241a28401b8b4a628c03bdca01876b64668f35fa85c3cce585b2c')
 
 package() {
 	install -dm755 ${pkgdir}${destname}

@@ -11,7 +11,7 @@ pkgver=23.08
 pkgrel=4
 pkgdesc="Welcome App for TCET Linux"
 arch=('x86_64')
-url="https://github.com/tcet-opensource/tcet-linux-welcome"
+url="https://github.com/harshau007/testing-repo/releases/download"
 license=('GPL3')
 makedepends=('git')
 
@@ -20,8 +20,8 @@ depends=('yad')
 conflicts=()
 provides=("${pkgname}")
 options=(!strip !emptydirs)
-source=(${pkgname}::"git+${url}")
-sha256sums=('SKIP')
+source=("$pkgname.tar.gz::$url/2023.09.07/$pkgname.tar.gz")
+sha256sums=('e7b2444a8e06744c088d215bc5994195c2f9e4a38c9e92ba11b123ad6aab65fb')
 
 package() {
 	install -dm755 ${pkgdir}${destname}/

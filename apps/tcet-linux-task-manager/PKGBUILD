@@ -6,14 +6,14 @@ pkgver=23.08
 pkgrel=3
 pkgdesc="Task Manager for TCET Linux"
 arch=('x86_64')
-url="https://github.com/tcet-opensource/tcet-linux-task-manager"
+url="https://github.com/harshau007/testing-repo/releases/download"
 license=('GPL3')
 
 conflicts=()
 provides=("${pkgname}")
 options=(!strip !emptydirs)
-source=(${pkgname}::"git+${url}")
-sha256sums=('SKIP')
+source=("$pkgname.tar.gz::$url/2023.09.07/$pkgname.tar.gz")
+sha256sums=('42bf301554622724573bae6e1018a1bf2d03a37cfe3026195162d4e7910d85a7')
 destname="/usr/share/applications/"
 destname1="/usr/share/icons/"
 destname2="/usr/bin"

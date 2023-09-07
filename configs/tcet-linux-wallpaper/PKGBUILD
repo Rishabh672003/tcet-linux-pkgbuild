@@ -6,14 +6,14 @@ pkgver=23.08
 pkgrel=4
 pkgdesc="Wallpaper for TCET Linux"
 arch=('x86_64')
-url="https://github.com/tcet-opensource/tcet-linux-wallpaper"
+url="https://github.com/harshau007/testing-repo/releases/download"
 license=('GPL3')
 
 conflicts=()
 provides=("${pkgname}")
 options=(!strip !emptydirs)
-source=(${pkgname}::"git+${url}")
-sha256sums=('SKIP')
+source=("$pkgname.tar.gz::$url/2023.09.07/$pkgname.tar.gz")
+sha256sums=('1f091ea4fefa055367dbb8ae055601b766e1b8765ce1591bc167e7043a658b2f')
 
 destname="/usr/share/backgrounds/xfce/"
 

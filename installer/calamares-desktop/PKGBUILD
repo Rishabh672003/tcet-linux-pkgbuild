@@ -7,15 +7,15 @@ pkgver=23.08
 pkgrel=3
 pkgdesc="Calamares Desktop"
 arch=('x86_64')
-url="https://github.com/Akash6222/calamares_desktop"
+url="https://github.com/harshau007/testing-repo/releases/download"
 license=('GPL3')
 makedepends=('git')
 
 conflicts=()
 provides=("${pkgname}")
 options=(!strip !emptydirs)
-source=(${pkgname}::"git+${url}")
-sha256sums=('SKIP')
+source=("$pkgname.tar.gz::$url/2023.09.07/$pkgname.tar.gz")
+sha256sums=('a52c8e5ff8d70f7d18751594c24e503d30b3f755b258695c85ced8766482a973')
 
 package() {
 

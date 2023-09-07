@@ -6,7 +6,7 @@ pkgver=2023.05.24
 pkgrel=1
 pkgdesc='Qogir is a flat Design theme for GTK'
 arch=('x86_64')
-url='https://github.com/tcet-opensource/tcet-linux-qogir-theme'
+url="https://github.com/harshau007/testing-repo/releases/download"
 license=('GPL3')
 depends=('gtk3' 'gtk4' 'gtk-engine-murrine' 'gtk-engines')
 makedepends=('git' 'sassc')
@@ -15,8 +15,8 @@ optdepends=(
 )
 provides=('qogir-gtk-theme')
 conflicts=('qogir-gtk-theme')
-source=('git+https://github.com/tcet-opensource/tcet-linux-qogir-theme.git')
-sha256sums=('SKIP')
+source=("$pkgname.tar.gz::$url/2023.09.07/$pkgname.tar.gz")
+sha256sums=('6ad8d1f4785aec3e5ac60fd540fffebe49829d2abd77f02284ac2a0b7412b2f8')
 
 package() {
   cd tcet-linux-qogir-theme
