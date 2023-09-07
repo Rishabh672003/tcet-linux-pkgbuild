@@ -6,15 +6,15 @@ pkgver=23.08
 pkgrel=1
 pkgdesc="A CLI system information tool written in BASH that supports displaying images."
 arch=('x86_64')
-url="https://github.com/tcet-opensource/tcet-linux-neofetch"
+url="https://github.com/harshau007/testing-repo/releases/download"
 license=('MIT')
 provides=($_pkgname)
 conflicts=($_pkgname)
 depends=('bash')
 makedepends=('git')
-source=("$pkgname::git+https://github.com/tcet-opensource/tcet-linux-neofetch.git")
+source=("$pkgname.tar.gz::$url/2023.09.07/$pkgname.tar.gz")
 md5sums=('SKIP')
-sha256sums=('SKIP')
+sha256sums=('06265b1f8c92b72b38e15220aeacb507a9ab3be53f46dd4aa731dd302aac1b0a')
 
 package() {
   cd $pkgname
