@@ -41,6 +41,8 @@ jobs:
         run: rm -rf updsum.sh
       - name: ls
         run: ls
+      - name: cd
+        run: cd tcet-linux-pkgbuild/
       - name: Commit and Push Changes
         uses: actions-js/push@v1.4
         with:
