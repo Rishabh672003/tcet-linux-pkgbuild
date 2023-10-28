@@ -39,6 +39,8 @@ jobs:
         run: sudo -u non_root ./updsum.sh
       - name: Removing Script
         run: rm -rf updsum.sh
+      - name: ls
+        run: ls
       - name: Commit and Push Changes
         uses: actions-js/push@v1.4
         with:
